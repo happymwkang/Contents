@@ -1,0 +1,68 @@
+def turn_back():
+    turn_left()
+    turn_left()
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+
+
+def move_want(num):
+    repeat(move,num)
+
+def slash_right():
+    move()
+    turn_left()
+    move()
+    pick_beeper()
+    turn_right()
+
+def slash_left():
+    move()
+    turn_right()
+    move()
+    pick_beeper()
+    turn_left()
+
+def back_slash_left():
+    move()
+    turn_right()
+    move()
+    pick_beeper()
+    turn_left()
+
+def back_slash_right():
+    move()
+    turn_right()
+    move()
+    pick_beeper()
+    turn_left()
+
+
+
+move_want(4)
+repeat(slash_right,6)
+turn_back()
+repeat(back_slash_left,5)
+turn_left()
+repeat(slash_left,5)
+turn_left()
+repeat(back_slash_right,4)
+
+repeat(slash_right,4)
+turn_back()
+repeat(back_slash_left,3)
+turn_left()
+repeat(slash_left,3)
+turn_left()
+repeat(back_slash_right,2)
+
+repeat(slash_right,2)
+turn_back()
+repeat(back_slash_left,1)
+turn_left()
+repeat(slash_left,1)
+#turn_left()
+#repeat(back_slash_right,1)
